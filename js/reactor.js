@@ -36,7 +36,7 @@ startReactor = {
     },
     interface: {
 
-        memoryPanel: document.querySelector(".painelMemory"),
+        memoryPanel: document.querySelector(".memoryPanel"),
         computerLedPanel: document.querySelector(".computerLedPanel"),
         playerLedPanel: document.querySelector(".playerLedPanel"),
         playerMemory: document.querySelector(".playerMemory"),
@@ -151,7 +151,7 @@ startReactor = {
                 element.addEventListener("click", () => {
                 if (playerMemory.classList.contains("playerActive")) {
                     startReactor.play(parseInt(element.dataset.memory))
-                    console.log("O valor do elemento clicado é: " + element.dataset.memory)
+                    console.log("Clicked element value: " + element.dataset.memory)
 
                     element.style.animation = "playermemoryClick .4s"
                     setTimeout(() => element.style.animation = "", 400)
@@ -213,7 +213,7 @@ startReactor = {
         } else {
 
             startReactor.interface.endGame("fail")
-            document.getElementById("title").textContent = "Você é o impostor"
+            document.getElementById("title").textContent = "You are the impostor"
             setTimeout(() => {
                 document.getElementById("title").textContent = "START REACTOR"
                 startReactor.start()

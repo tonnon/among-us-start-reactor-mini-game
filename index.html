@@ -11,8 +11,8 @@
   <body>
     <h1 id="title">START REACTOR</h1>
     <div class="container">
-      <div class="painel">
-        <div class="boxPainel">
+      <div class="panel">
+        <div class="panelBox">
             <div class="computerLedPanel">
                 <div class="led lvl1"></div>
                 <div class="led lvl2"></div>
@@ -20,7 +20,7 @@
                 <div class="led lvl4"></div>
                 <div class="led lvl5"></div>
             </div>
-            <div class="painelMemory">
+            <div class="memoryPanel">
                 <div class="memory"></div>
                 <div class="memory"></div>
                 <div class="memory"></div>
@@ -31,15 +31,14 @@
                 <div class="memory"></div>
                 <div class="memory"></div>
                 <div class="btns">
-                  <h1 id="loadButton">LOAD</h1>
-                  <h1 id="startButton" style="display: none">PLAY</h1>
+                  <h1 id="startButton">PLAY</h1>
                 </div>
             </div>
         </div>
       </div>
 
-      <div class="painel">
-        <div class="boxPainel">
+      <div class="panel">
+        <div class="panelBox">
             <div class="playerLedPanel">
                 <div class="led lvl1.1"></div>
                 <div class="led lvl2.1"></div>
@@ -71,16 +70,10 @@
 
     <script src="js/reactor.js"></script>
     <script>
-      const loadButton = document.getElementById("loadButton")
       const startButton = document.getElementById("startButton")
 
-      loadButton.addEventListener("click", () => {
-          startReactor.load()
-          loadButton.style.display = "none"
-          startButton.style.display = ""
-      })
-
       startButton.addEventListener("click", () => {
+          startReactor.load()
           startReactor.start()
           startButton.style.display = "none"
       })

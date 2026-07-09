@@ -36,7 +36,7 @@ h1 {
 .btns h1 {
   cursor: pointer;
   color: #00c000;
-  animation: pisca 2s infinite;
+  animation: blink 2s infinite;
   font-weight: 800;
 }
 
@@ -44,7 +44,7 @@ h1 {
   color: #032a03;
 }
 
-@keyframes pisca {
+@keyframes blink {
   0% {
     opacity: 1;
   }
@@ -87,7 +87,7 @@ h1 {
   width: 86%;
 }
 
-.painel {
+.panel {
   border: 8px solid black;
   display: flex;
   justify-content: center;
@@ -97,7 +97,7 @@ h1 {
   background-repeat: no-repeat;
 }
 
-.boxPainel {
+.panelBox {
   display: flex;
   flex-direction: column;
   padding: 4%;
@@ -129,7 +129,7 @@ h1 {
   box-shadow: -2px 7px #827e7f;
 }
 
-.painelMemory {
+.memoryPanel {
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, 33.3%);
@@ -218,10 +218,6 @@ h1 {
 .last {
   box-shadow: 0px 0px 0px 4px rgb(10, 10, 10), 2px 22px 0px -9px#575757,
     1px 18px 0px 2px #6a6a6a;
-}
-
-.teste {
-  font-size: 3rem;
 }
 
 @keyframes errorLed {
