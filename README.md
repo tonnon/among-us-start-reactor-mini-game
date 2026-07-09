@@ -2,8 +2,6 @@
 
 A browser recreation of the **Start Reactor** task from Among Us: a Simon-style memory game built with plain HTML, CSS, and JavaScript — no frameworks, no build step.
 
-![Among Us](svg/among-us-space.svg)
-
 ## How to Play
 
 1. Open `index.html` in your browser (or serve the folder with any static file server).
